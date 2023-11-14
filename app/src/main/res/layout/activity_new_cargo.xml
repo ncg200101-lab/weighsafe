@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.NewCargoActivity"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingHorizontal="@dimen/main_dimen_40"
+        android:background="@color/colorPrimaryDark">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/setup_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_new_cargo"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/edit_btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_btn_save"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scrollbar_edit"
+        android:layout_below="@id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/edit_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/main_dimen_40">
+                <LinearLayout
+                    android:id="@+id/ll_cargo_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="@dimen/main_dimen_40">
+
+                    <TextView
+                        android:id="@+id/cargo_name_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/cargo_name_label"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/cargo_name_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="22sp"
+                        android:hint="(i.e. Polaris ATV)"
+                        android:textColorHint="@color/grey60"
+                        android:background="@drawable/bottom_line_edittext"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_estimated_weight_Cargo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_cargo_name"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/rl_img_ewoc"
+                        android:text="@string/text_estimated_weight_cargo"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edit_estimated_cargo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:singleLine="true"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="22sp"
+                        android:hint="lbs"
+                        android:textColorHint="@color/grey60"
+                        android:background="@drawable/bottom_line_edittext"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_cargo_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_estimated_weight_Cargo"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/text_cargo_location"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+                        android:id="@+id/btn_group_cargo_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="3dp"
+                        android:elevation="3dp"
+                        android:background="@android:color/darker_gray"
+                        app:divider="@color/grey60"
+                        app:dividerPadding="5dp"
+                        app:dividerWidth="2dp"
+                        app:draggable="true"
+                        app:position="0"
+                        app:radius="10dp"
+                        app:ripple="true"
+                        app:rippleColor="@color/grey60"
+                        app:selectedButtonRadius="5dp"
+                        app:selectedBackground="@android:color/white">
+
+                        <com.addisonelliott.segmentedbutton.SegmentedButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            app:selectedTextColor="@color/colorBlack"
+                            app:text="@string/lb_vehicle"
+                            app:textColor="@android:color/black"
+                            app:textSize="15sp"/>
+
+                        <com.addisonelliott.segmentedbutton.SegmentedButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            app:selectedTextColor="@color/colorBlack"
+                            app:text="@string/lb_trailer"
+                            app:textColor="@android:color/black"
+                            app:textSize="15sp"/>
+
+                    </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_delete_cargo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="end"
+                    android:layout_below="@+id/ll_cargo_location"
+                    android:layout_marginTop="30dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_trash_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/text_delete_cargo"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--<dimen name="design_bottom_navigation_text_size" tools:override="true">20sp</dimen>-->
+    <!--<dimen name="design_bottom_navigation_active_text_size" tools:override="true">20sp</dimen>-->
+    <dimen name="design_bottom_navigation_item_max_width" tools:override="true">600dp</dimen>
+    <dimen name="design_bottom_navigation_active_item_max_width" tools:override="true">600dp</dimen>
+    <dimen name="main_padding_horizontal">15dp</dimen>
+    <dimen name="main_dimen_40">15dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="radio_button_conner_radius">5dp</dimen>
+    <dimen name="radio_button_stroke_border">1dp</dimen>
+
+    <dimen name="simpletooltip_max_width">200dp</dimen>
+    <dimen name="simpletooltip_overlay_offset">5dp</dimen>
+    <dimen name="simpletooltip_margin">5dp</dimen>
+    <dimen name="simpletooltip_padding">10dp</dimen>
+    <dimen name="simpletooltip_arrow_width">8dp</dimen>
+    <dimen name="simpletooltip_arrow_height">8dp</dimen>
+    <dimen name="simpletooltip_animation_padding">4dp</dimen>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7e1518</color>
+    <color name="colorPrimaryDark">#ac1e23</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorAccent">#D1D0BD</color>
+    <color name="colorLightGrey">#F3F3F3</color>
+    <color name="colorBrightGrey">#E3E3E3</color>
+    <color name="colorGrey">#A5A5A5</color>
+    <color name="colorTabGrey">#D5D5D5</color>
+    <color name="colorHint">#c3c3c3</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorblue">#52acdf</color>
+    <color name="colorBlackLightCustomToast">#7f000000</color>
+    <color name="colorThumbsUp">#21AC20</color>
+    <color name="radio_button_selected_color">#ac1e23</color>
+    <color name="radio_button_unselected_color">#ffffff</color>
+
+    <color name="grey60">#66D0D0D0</color>
+    <color name="grey30">#66909090</color>
+
+    <color name="simpletooltip_background">@color/colorPrimaryDark</color>
+    <color name="simpletooltip_text">@color/colorWhite</color>
+    <color name="simpletooltip_arrow">@color/colorPrimaryDark</color>
+
+</resources>

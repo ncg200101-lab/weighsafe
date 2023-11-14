@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.GuideActivity">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/myViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/viewPagerIndicatorIconsLayout"
+        android:background="@color/colorWhite"
+        android:layout_marginBottom="10dp" />
+    <LinearLayout
+        android:id="@+id/viewPagerIndicatorIconsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/main_dimen_40">
+        <ImageView
+            android:id="@+id/dot0"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:contentDescription="@null"
+            android:src="@drawable/current_position_icon" />
+        <ImageView
+            android:id="@+id/dot1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:contentDescription="@null"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/disible_position_icon" />
+
+        <ImageView
+            android:id="@+id/dot2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:contentDescription="@null"
+            android:src="@drawable/disible_position_icon" />
+        <ImageView
+            android:id="@+id/dot3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:contentDescription="@null"
+            android:src="@drawable/disible_position_icon" />
+        <ImageView
+            android:id="@+id/dot4"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:contentDescription="@null"
+            android:src="@drawable/disible_position_icon" />
+        <ImageView
+            android:id="@+id/dot5"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:contentDescription="@null"
+            android:src="@drawable/disible_position_icon" />
+        <ImageView
+            android:id="@+id/dot6"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:contentDescription="@null"
+            android:src="@drawable/disible_position_icon" />
+        <ImageView
+            android:id="@+id/dot7"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:contentDescription="@null"
+            android:src="@drawable/disible_position_icon" />
+        <ImageView
+            android:id="@+id/dot8"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:contentDescription="@null"
+            android:src="@drawable/disible_position_icon" />
+        <ImageView
+            android:id="@+id/dot9"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:contentDescription="@null"
+            android:src="@drawable/disible_position_icon" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_loader"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

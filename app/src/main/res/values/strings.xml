@@ -1,0 +1,510 @@
+<resources>
+    <string name="app_name">WeighSafe</string>
+    <string name="text_home">Home</string>
+    <string name="text_setup">Setup</string>
+    <string name="text_tow_checklist">Checklist</string>
+    <string name="text_notes">Notes</string>
+    <string name="text_incorrect_configuration">Incorrect Configuration</string>
+    <string name="text_incorrect_setup">Incorrect Tow Configuration</string>
+    <string name="text_incorrect_note">Please add at least one Vehicle, Trailer, and Hitch in the Setup tab</string>
+
+    <string name="text_tow_help">Help</string>
+    <string name="btn_save">save</string>
+    <string name="btn_cancel">cancel</string>
+    <string name="btn_close">Close</string>
+    <string name="text_help_title">Help Center</string>
+    <string name="text_maintenance_title">Maintenance</string>
+    <string name="warranty_title">Limited Warranty</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_edit">Edit</string>
+    <string name="text_drawbar_setup">DRAWBAR SETUP</string>
+    <string name="text_draw_setup_position">Position: </string>
+    <string name="position_res">Rise</string>
+    <string name="text_draw_setup_holes">Visible Holes:</string>
+    <string name="holes_res">1.5</string>
+    <string name="delete_vehicle_message">Are you sure you want to delete this?</string>
+
+    <string name="text_warranty_title">TRUE TOW HITCH LIMITED WARRANTY </string>
+    <string name="contact_title">Contact Us</string>
+    <string name="contact_content">Weigh Safe Customer Support</string>
+    <string name="contact_phone">801-820-7020</string>
+    <string name="contact_mail">support@weigh-safe.com</string>
+    <string name="contact_url">www.weigh-safe.com</string>
+    <string name="question_title">Frequently Asked Questions</string>
+    <string name="question_1">Can I use air bags with the True Tow Weight Distribution Hitch?</string>
+    <string name="question_2">What if the lead screw is not turning before reaching the DTW?</string>
+    <string name="question_3">Why does my truck still have some squat?</string>
+    <string name="question_4">My truck is still squatting a ton?</string>
+    <string name="question_5">Leaking hydraulic oil?</string>
+    <string name="question_6">Gauge isn\"t working?</string>
+    <string name="question_7">The paint is starting to wear off, what do I do?</string>
+    <string name="vehicle_edit">Edit</string>
+    <string name="edit_title">Edit Tow Configuration</string>
+    <string name="edit_btn_save">Save</string>
+
+    <string name="axle_inch_label">Rear Vehicle Axle Center-line to Tow Ball</string>
+    <string name="spring_inch_label">Tow Ball to Spring Bar Connection</string>
+    <string name="trailer_inch_label">Tow Ball to Center-line of Trailer Axle(s)</string>
+    <string name="btn_raise">Rise</string>
+    <string name="btn_drop">Drop</string>
+    <string name="btn_minus">-</string>
+    <string name="btn_plus">+</string>
+    <string name="text_edit_vehicle">Edit Tow Configuration</string>
+    <string name="text_hint_vehicle">Vehicle (i.e. 2018 Ford F-150)</string>
+    <string name="text_hint_trailer">Trailer (i.e. Toy Hauler)</string>
+    <string name="text_hint_vin">Enter VIN...</string>
+    <string name="text_dummy_vehicle_title">Add Tow Configuration</string>
+    <string name="text_current_load">Current Load</string>
+    <string name="text_lbs">(lbs)</string>
+    <string name="text_safe_tongue_weight_range">safe tongue weight range</string>
+    <string name="text_estimated_gross_trailer_weight">Estimated Gross Trailer Weight</string>
+    <string name="text_tongue_weight">Tongue Weight</string>
+    <string name="text_tongue_weight_verify">Verify vehicle and trailer connection is done on a flat surface without sway bars connected.</string>
+    <string name="text_vehicle_measurements">Vehicle Measurements</string>
+    <string name="text_inches">(inches)</string>
+    <string name="result_tongue_weight">DISTRIBUTED TONGUE WEIGHT</string>
+    <string name="result_system">(Be in this zone to be equalized)</string>
+    <string name="btn_calculate">CALCULATE</string>
+    <string name="draw_text">Drawbar Position</string>
+    <string name="holes_text">Visible Holes on Drawbar above Head As...</string>
+    <string name="holes_content_text">1.5</string>
+    <string name="holes_content_unit"> Holes</string>
+    <string name="text_rear_axle_to_end_of_receiver">Rear Vehicle Axle Center-line to Tow Ball</string>
+    <string name="text_tow_ball_to_end_of_spring_bars">Tow Ball to Spring Bar Connection</string>
+    <string name="text_tow_ball_to_trailer_axle">Tow Ball to Center-line of Trailer Axle(s)</string>
+    <string name="btn_reset">Reset</string>
+    <string name="text_hand_crank_weight">Distributed Tongue Weight</string>
+    <string name="text_lbs_lg">0 lbs</string>
+    <string name="text_required_to_equalize_the_trailer">(required to equalize the trailer)</string>
+    <string name="text_trailer_connection">Trailer Connection</string>
+    <string name="text_verify_vehicle_1">#1 Verify coupler latched and locked.</string>
+    <string name="text_verify_vehicle_2">#2 Verify safety chains are connected.</string>
+    <string name="text_verify_vehicle_3">#3 Verify run away cable is attached.</string>
+    <string name="text_verify_vehicle_4">#4 Verify power cable(s) are connected.</string>
+    <string name="text_load">Load</string>
+    <string name="text_verify_weight">#1 Verify weight is evenly distributed left and right side of trailer.</string>
+    <string name="text_verify_distance">#2 Verify distance from lowest point of hitch (ball mount) to the ground is not less than 11\".</string>
+    <string name="text_verify_all">#3 Verify all cargo is secured adequately period.</string>
+    <string name="text_tires">Tires</string>
+    <string name="text_verify_tires">Verify tires of vehicle and trailer are according to manufacturer recommendations. Make sure to have correct tires for application, tires are in good condition and correct tire pressure.</string>
+    <string name="text_lights">Lights</string>
+    <string name="text_trailer">Verify trailer lights are all properly connected and working.</string>
+    <string name="text_trailer_brake">Trailer Brakes</string>
+    <string name="text_trailer_if_brake">If trailer has brakes, verify they are connected properly breakaway cable is properly attached.</string>
+    <string name="text_mirrors">Mirrors</string>
+    <string name="text_verify_side_view">Verify side-view mirrors provide a clear view extends to the end of trailer.</string>
+    <string name="close_guide">Close Guide</string>
+    <string name="tow_ball_install_text_1">1. Insert the correct size Weigh Safe Tow Ball into the designated hole of the hitch Head Assembly. See
+            Figure 1.</string>
+    <string name="tow_ball_install_text_2">2. Once the ball is resting at the bottom, use the provided ½” Shoulder Ball Pin and ½” Lock Washer and tighten with ¼” Hex Wrench until bolt is completely tight and is sub flush with the face of the Head Assembly. Torque to 30 ft-lb. See Figure 2.</string>
+
+    //Guide text
+    <string name="text_welcome">Welcome to the \nWeigh Safe Family!</string>
+    <string name="text_welcome_title">Weigh Safe True Tow Weight \nDistribution Setup</string>
+    <string name="text_welcome_1">Swipe left to navigate through the \ninstruction guide</string>
+    <string name="skip_guide">Skip Guide</string>
+    <string name="pre_setup_title">Pre-Set Up</string>
+    <string name="pre_setup_text_1">Park your trailer and tow vehicle on flat, level ground in line with each other. Put wheel stops on trailer wheels and uncouple trailer from the tow vehicle. Pull the tow vehicle forward 4 to 5 feet to allow for working space. </string>
+    <string name="pre_setup_text_2">With the Weigh Safe True Tow Weight Distribution Hitch, set up is dependent on the measured tongue weight for each separate tow. Be sure to measure your tongue weight without Spring Arm attachment prior to each connection and adjust your hitch according to the instructions below. Tongue weight will change with the varying levels of the propane and freshwater tanks, and any other cargo the trailer will carry, including toys for toy haulers.\n\n
+    Check and inflate all tires of the system to the proper pressure before every trailer and tow vehicle connection.</string>
+    <string name="tow_ball_install">Tow Ball Installation</string>
+    <string name="head_assemble">Head Assembly \nHeight Adjustment</string>
+    <string name="head_assemble_text_1">1. Adjust the trailer to be parallel to the ground. This can be done by measuring the front and back of the trailer frame to the ground. Adjust where needed so both the front and back measurements are the same.
+    \n\n2. With the trailer level, measure from the ground to the top of the trailer coupler. The top of the Tow Ball on the Head Assembly should be some distance above this measurement. The distance will all depend on what the tongue weight of the trailer is and what kind of suspension is on the tow vehicle. A good rule of thumb is to locate the Tow Ball ⅛” higher for every 100 lbs. of tongue weight. See Figure 3.
+    </string>
+    <string name="head_assemble_text_2">3. Insert the correct size of Draw Bar into the receiver of the tow vehicle. Depending on what the height of the trailer coupler is, the Draw Bar may need to be in the rise or drop position. See Figure 4.</string>
+    <string name="head_assemble_text_3">4. Slide the Head Assembly onto the Draw Bar and insert the Steel Lock Plate Key Assembly (Dual Pins) into the correct holes to set the ball height. Be sure to push the Steel Lock Plate Key Assembly (Dual Pins) all the way until the pins are fully inserted and the lock tab is engaged. To check this, try and pull out on the Steel Lock Plate Key Assembly (Dual Pins) making sure the lock tab is secured before towing. See Figures 5 and 6. Secure Dust Lock Cover over the Steel Lock Plate Key Assembly (Dual Pins) to prevent debris from getting inside the lock.
+    \n\n5. For future reference, save your height set up into the DTW Tool on the Weight Safe App or on our website. Input both your Draw Bar position (rise or drop) and how many empty holes are visible above the top of the Head Assembly in the Draw Bar.
+    </string>
+
+    <string name="head_assemble_text_4">6. What is the position of your Draw Bar.</string>
+    <string name="head_assemble_text_5">7. How many holes are visible on the Draw Bar above Head Assembly.</string>
+    <string name="trailer_bracket">Trailer Bracket Installation</string>
+    <string name="trailer_location">TRAILER BRACKET LOCATION</string>
+    <string name="trailer_bracket_text_1">Locate the center-line of where the trailer brackets need to be placed by measuring from the center of the trailer coupler along the trailer frame and put a mark at 32” on both sides. Ensure there are no brake lines, electrical wiring, or gas lines that would be in the way of the trailer brackets. If something is obstructing the placement of the trailer brackets, it will need to be re-routed or avoided to prevent damage by the trailer brackets.\n\n
+        Securing the trailer brackets at the 32” mark will put the least amount of stress on the trailer and hitch, providing the safest tow.\n\n
+        There are some scenarios where there may be a frame member, propane mount, or battery mount in the way that can’t be moved. In these rare cases, the trailer brackets can be moved forward, closer to the trailer coupler to a minimum distance of 27” from the coupler center.
+    </string>
+    <string name="trailer_bracket_frame">INSTALLATION OF TRAILER\nBRACKETS ONTO FRAME</string>
+    <string name="trailer_bracket_text_2">Place one of the ½” x 3-½” Carriage Bolts through the top hole in the Outside C Channel Bracket and align it with the top hole of the Inside Flat Bracket. Slide on the ½” Lock Washer and thread on the ½” Nut a couple of turns. See Figure 8.</string>
+    <string name="trailer_bracket_text_3">Slip the brackets over the trailer frame and line up the top bolt with the center mark line from the previous step. Tighten the nut until hand tight. See Figure 9.</string>
+    <string name="trailer_bracket_text_4">Insert the second ½” x 3-½” Carriage Bolt in the highest open hole in the Outside C Channel Bracket under the trailer frame and press it through the corresponding hole on the Inside Flat Bracket. Slide on the ½” Lock Washer and thread on the ½” Nut until hand tight. See Figure 9.
+        \n\nThere should not be a gap between the top and bottom Carriage Bolts and the trailer frame. If there is a gap larger than ½” it can cause damage to the trailer brackets.
+        \n\nUse ¾” socket end of Lift Arm or ¾” socket wrench and tighten the ½” nuts. Be sure to alternate between the top and bottom nuts to avoid over tightening one and not being able to tighten the other one completely. Over tightening one can cause damage to the brackets.
+    </string>
+    <string name="setting_height">SETTING HEIGHT OF SPRING\nARM PLATFORM</string>
+    <string name="trailer_bracket_text_5">Slide the Spring Arm Platform into the Outside C Channel Bracket and set it to the correct height. The ideal height for the flat portion of the platform is as close to 9” below the top of the trailer coupler. See Figure 10. This will allow the Spring Arms to be horizontal with the trailer frame which will create the smoothest and safest tow. In rare cases, if the lead screw on the Head Assembly bottoms out before you reach your DTW*, the Spring Arm Platform might need to be less than 9”. </string>
+    <string name="trailer_bracket_text_6">Once you have the Spring Arm Platform set to the correct height, insert two ½” x 3” Carriage Bolts into the square holes in the Outside C Channel Bracket that lines up with the corresponding holes in the Spring Arm Platform. Press them all the way in and slide on a ½” Lock Washer and thread on the ½” Nut on each bolt. Tighten to hand tight. Use the ¾” socket end of the Lift Arm or ¾” socket wrench and tighten the ½” nuts. All trailer bracket bolts will need to be torqued to 65 ft-lb. See Figure 11.</string>
+    <string name="trailer_bracket_text_7">Repeat these steps on the other side of the trailer frame for the other trailer bracket. </string>
+    <string name="spring_arm">Spring Arm Assembly</string>
+    <string name="spring_warning">WARINNG\n\nUSING A TORQUE WRENCH, CONFIRM THE SPRING ARM SOCKET BOLTS ARE TORQUED TO A MINIMUM OF 180 FT-LB TORQUE BEFORE EACH TOWING SESSION.</string>
+    <string name="spring_text_1">Insert the Spring Arms into the Spring Arm Sockets so the hole in the Spring Arm lines up with the hole on the Spring Arm Socket.
+        \n\nInsert the Clevis Pin into the hole from the inside to the outside of the hitch. This is to allow easy access for the Cotter Pin. Secure the Clevis Pin with the Cotter Pin. Repeat these steps on the other side. See Figure 12 and 13.
+    </string>
+    <string name="spring_notice">Notice\n\nThe Spring Arm Sockets are being compressed by Socket Bolts in the Head Assembly and are hard to twist. This is to help with sway control. Do not pound directly on the Spring Arm Sockets. This could cause them to chip or crack. Use the Spring Arms as a lever to move the compressed Spring Arm Sockets.
+</string>
+    <string name="tongue_weight">Distributed Tongue\nWeight (DTW)</string>
+    <string name="tongue_weight_text_1">Use the following information to set up and adjust your Weigh Safe True Tow Weight Distribution Hitch.\n\nName of Vehicle</string>
+    <string name="type_trailer">Type of Trailer</string>
+    <string name="tongue_weight_text_2">Start by backing up the tow vehicle to the trailer and lower the trailer coupler onto the Tow Ball. Lock the coupler and insert safety pin/lock for a secure attachment. Continue retracting the trailer tongue jack until it raises off the ground.
+        \n\n</string>
+    <string name="text_hint_gtw">input weight(lbs) here...</string>
+    <string name="tongue_weight_text_3">1. What is your Weigh Safe tongue guage reading?</string>
+    <string name="text_hint_tongue">input weight(lbs) here...</string>
+    <string name="tongue_weight_text_4">You will need to take three measurements of your towing system to get the correct DTW*. To help take dimensions, swing out one of the Spring Arms until the bar is perpendicular to the Head Assembly.(See Image Below) </string>
+    <string name="tongue_weight_text_5">This arm will be used as a base point to take measurements. Always measure using the side of the Spring Arm closest to the towing vehicle. The inside face is in line with the Tow Ball.  The three measurements are below.
+        \n\n2.	In inches, measure in a straight line from the Rear vehicle axle center-line to the Tow Ball (0-70&quot; max). See Figure 14.
+    </string>
+    <string name="text_hint_axle">input measurment here...</string>
+    <string name="tongue_weight_text_6">3. In inches, measure in a straight line from the Tow Ball to the center of the trailer brackets (24-32&quot; max). See Figure 15.</string>
+    <string name="tongue_weight_text_7">4. In inches, measure from the center-line of a single axle or center-line between multiple axles to the center of the ball coupler. Insert measurement in DTW tool. See Figure 16.</string>
+    <string name="connect_spring_arm">Connecting Spring Arms</string>
+    <string name="connect_spring_text_1">There are two methods to connect the Spring Arms to the Spring Arm Platforms. The first method is for the initial set up (out of the box). The second method is ideal for every other connection. </string>
+    <string name="connect_first_method">FIRST METHOD</string>
+    <string name="connect_spring_text_2">Out of the box, the Live Adjustment System in the Head Assembly will be bottomed out leaving the Spring Arms in the highest position. See Figure 17. With the trailer still coupled to the tow vehicle, measuring tongue weight, you should be able to slide the Spring Arms onto the Spring Arm Platforms. If you are towing a heavy trailer that creates vehicle squat keeping you from being able to slide the Spring Arms onto the Spring Arm Platforms, you may have to use the Lift Arm. See Figure 18.  If that doesn’t work, you will have to use the trailer tongue jack to lift both tow vehicle and trailer until you can lift the Spring Arms into place over the Spring Arm Platforms. </string>
+    <string name="connect_spring_text_3">Use the L-Fingers and L-Finger Pin to secure the Spring Arms onto the Spring Arm Platforms. See Figure 19.</string>
+    <string name="connect_second_method">SECOND METHOD</string>
+    <string name="connect_spring_text_4">With the trailer still coupled to the tow vehicle, use the trailer tongue jack to lift both tow vehicle and trailer until you can swing the Spring Arms into place over the Spring Arm Platforms. If you reach the highest level or load of the trailer tongue jack and the Spring Arms are unable to be lifted onto the Spring Arm Platforms, you can use the Lift Arm to lift the Spring Arms up onto the Spring Arm Platforms. See Figure 18.</string>
+    <string name="connect_spring_text_5">Use the L-Fingers and L-Finger Pin to secure the Spring Arms on the Spring Arm Platforms. See Figure 19.
+            \n\nRepeat step for both Spring Arms on each side of the trailer.
+    </string>
+    <string name="live_weight">Live Weight\nDistributing System</string>
+    <string name="live_weight_text_1">Now that the Spring Arms are attached to the trailer, it is time to distribute your towing system.</string>
+    <string name="required_tongue_weight">REQUIRED DISTIBUTED\nTONGUE WEIGHT</string>
+    <string name="guide_result">50 lbs</string>
+    <string name="live_weight_text_note">NOTE: This calculation is based on the current cargo weights that are setup. If your unsure if your cargo is setup correctly please use the Home Screen to calculate Distributed Tongue Weight.</string>
+    <string name="live_weight_text_2">Using the Lift Arm or a ¾” socket or lug wrench, tighten or loosen the lead screw until your tongue weight gauge reaches the DTW* number. Turning it clockwise increases tongue weight and counterclockwise decreases tongue weight. See Figure 20.</string>
+    <string name="live_weight_text_3">Once the tongue weight gauge has reached the required DTW*, your system is now distributed. It is important to note that the DTW* will normally, but not always, read somewhere between 2 to 3 times your tongue weight.
+    </string>
+    <string name="live_weight_notice">Notice:\n\nSometimes the added force in the Spring Arms can cause extra friction in the Tow Ball resulting in slow or no change in the tongue weight while adjusting the Lead Screw. If you are noticing your system not moving after a substantial amount of adjusting, try to stand on or kick the tongue of your trailer to loosen up the high friction.
+
+    </string>
+    <string name="disconnect_hitch">Disconnecting Your Hitch</string>
+    <string name="disconnect_text">Pull your trailer into the place you want it parked; most effectively done on a flat surface.
+        \n\nSet the parking brake and put stops under the wheels of the trailer.
+        \n\nUnhook the electrical cable, chains, and breakaway cable from the tow vehicle.
+        \n\nRaise the trailer tongue jack until it starts to raise both the trailer and tow vehicle. Continue to lift until the weight is lifted off the ends of the Spring Arms, allowing you to easily pull off the Spring Arms from the Spring Arm Platforms.
+        \n\nRemove L-Finger Pins and L-Fingers.
+        \n\nSlide Spring Arms away from the trailer frame to clear the trailer brackets when you lower the trailer tongue jack.
+        \n\nLower the trailer tongue jack until the trailer tongue is again resting on the hitch (showing some tongue weight) and you can unhook the trailer coupler latch.
+        \n\nUse the trailer tongue jack to lift the trailer off the Tow Ball and pull the tow vehicle away from the trailer.
+        \n\nUnhook the Spring Arms from the Head Assembly and remove the Head Assembly from the Draw Bar.
+        \n\nStore your True Tow Weight Distribution Hitch in a safe and secure location that is protected from weather conditions.
+    </string>
+    <string name="step_3_notice">Notice:\n\nIf you don\"t know your actual tongue weight, quickly measure your tongue weight by putting on the head assembly at a best guess height and lower your trailer onto the tow ball completely. The gauge will show your tongue weight. Continue with instruction to set head height correctly.</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_maintenance_content_1">WARNING\n\nDo not tow your trailering system unless all bolts and nuts have been
+        properly checked and tightened and all pins and brackets are securely installed. Towing with loose bolts or pins for an
+        extended period can cause abnormal stress on the hitch resulting in accident, severe injury, and/or property damage.\n\nBefore every tow, check that all bolts and nuts are torqued to the amount specified in
+        Table\n\nCheck all plugs and screws in the Head Assembly to make sure that none have backed out or are leaking hydraulic fluid.
+
+    </string>
+    <string name="text_maintenance_content_2">TORQUE SPECIFICATIONS\n\nBall Shoulder Bolt: 30 ft-lbs\nTrailer Bracket Bolts: 65 ft-lbs\nSpring Arm Swivel Bolts: 150 ft-lbs
+    </string>
+    <string name="text_maintenance_content_3">
+        \nOn the Head Assembly, the friction surfaces should be kept clean and well lubricated with high-pressure multipurpose or bearing grease. The best way to apply the grease is to twist the Spring Arm Sockets completely to the outside positions and apply grease to the surfaces where the top and bottom of the Spring Arm Sockets contact the rest of the Head Assembly. See Figure 21.
+    </string>
+    <string name="text_maintenance_content_4">
+        There are also two grease ports on the Head Assembly that supply grease to the Lead Screw that needs to be serviced at the beginning of each towing season or bi-annually in warmer climates. To service, use a grease gun filled with high-pressure multipurpose or bearing grease and pump into ports. Fill the top cavity completely full until excess grease starts to come out of the top around the O-ring. For the bottom port, continue to fill until grease starts to come out of the bottom drain hole in the rubber sleeve. See Figure 22.
+    </string>
+    <string name="text_warranty_content">
+        Subject to the limitations set forth below, Weigh Safe, LLC (the “Manufacturer”) warrants to the original consumer
+        (the “Purchaser”) of the Weigh Safe True Tow Weight Distribution Hitch that the Weigh Safe True Tow Weight Distribution
+        Hitch, other than the Weigh Safe True Tow Weight Distribution Hitch gauge (the “Gauge”), shall be free from material
+        defects in parts and/or workmanship that impair the intended use of the Weigh Safe True Tow Weight Distribution Hitch
+        for so long as the Purchaser owns, or has not otherwise transferred, the Weigh Safe True Tow Weight Distribution Hitch.
+        Subject to the limitations set forth below, the Manufacturer warrants to the Purchaser that the Gauge shall be free from
+        material defects in parts and/or workmanship for a period of one-year from the date of purchase.  ***TO OBTAIN BENEFITS
+        of this warranty you MUST: REGISTER ONLINE (within 30 days of original date of purchase) AT: www.weigh-safe.com/register
+        \n\n1.	This Warranty is nontransferable and is expressly limited to the repair or replacement of a defective Weigh Safe True Tow Weight Distribution Hitch, including any part thereof, covered under this Warranty. In no event will this Warranty extend beyond the date this product ceases to be manufactured.
+        \n\n2.	 To make a claim under this Warranty, the Purchaser must first write the Manufacturer at 420 North Geneva Road Lindon, Utah 84042, to receive a Return Merchandise Authorization number and/or to determine specific needs.
+        \n\n3.	The Manufacturer reserves the right to examine photographs and/or physical evidence of a Weigh Safe True Tow Weight Distribution Hitch claimed to be defective, and to recover said Weigh Safe True Tow Weight Distribution Hitch pursuant to the terms of this Warranty, prior to authorization of a claim under this Warranty.
+        \n\n4.	Unless indicated otherwise by the Manufacturer, in order to determine whether a requested repair is covered under this Warranty, the Weigh Safe True Tow Weight Distribution Hitch must be shipped prepaid to the Manufacturer with a copy of the relevant proof of purchase.  The Manufacturer will not be responsible for any loss or damage incurred in connection with the return of a Weigh Safe True Tow Weight Distribution Hitch or its parts to Manufacturer under this Warranty.  The Manufacturer will examine the Weigh Safe True Tow Weight Distribution Hitch so shipped and, in its sole and reasonable discretion, will determine (1) whether this Warranty covers the Weigh Safe True Tow Weight Distribution Hitch and, if it does, (2) whether the Weigh Safe True Tow Weight Distribution Hitch needs to be repaired or replaced.  Any and all dealer service charges, labor costs, shipping costs, insurance, travel expenses and any other charges or costs involved in the removal, installation or replacement of a defective Weigh Safe True Tow Weight Distribution Hitch, including, but not limited to, any part thereof, covered under this Warranty, will be the sole responsibility of the Purchaser and must be prepaid.  Any Weigh Safe True Tow Weight Distribution Hitch, including any part thereof, shipped to the Manufacturer “collect” will be refused.
+        \n\n5.	THIS WARRANTY IS VOID IF THE WEIGH SAFE TRUE TOW WEIGHT DISTRIBUTION HITCH HAS BEEN DAMAGED BY ACCIDENT,  USE OTHER THAN THE WEIGH SAFE TRUE TOW WEIGHT DISTRIBUTION HITCH’S INTENDED USE, UNREASONABLE USE AND/OR ABUSE, NEGLIGENCE, IMPROPER SERVICE OR REPAIR, IMPROPER INSTALLATION OR HANDLING, FAILURE TO FOLLOW PROVIDED INSTRUCTIONS, SHIPPING, VANDALISM, ACTS OF GOD, ENVIRONMENTAL FACTORS, ALTERATION OF THE WEIGH SAFE TRUE TOW WEIGHT DISTRIBUTION HITCH, OR ANY OTHER EVENT BEYOND THE CONTROL OF THE MANUFACTURER, OR OTHER CAUSES NOT ARISING OUT OF DEFECTS IN MATERIAL OR WORKMANSHIP.
+        \n\n6.	USING THE WEIGH SAFE TRUE TOW WEIGHT DISTRIBUTION HITCH FOR OTHER THAN PERSONAL USE, AS A TOWING HITCH, OR USE IN ANY MANNER INCONSISTENT WITH ITS INTENDED USE OR PURPOSE, WILL VOID THIS WARRANTY.
+        \n\n7.     Manufacturer warrants that the gauge reading is accurate within fifty pounds.
+        \n\n8.  THIS WARRANTY DOES NOT COVER ANY LIABILITY TO PERSON OR PROPERTY THAT MAY OCCUR UPON: (i) Purchaser’s failure to correctly and securely attach a tow load abiding by all relevant recommendations, (ii) Purchaser’s failure to check the gauge or to use the Weigh Safe True Tow Weight Distribution Hitch within the gross trailer weight range, tongue weight range, and tow-ball weight rating specified for the applicable towing vehicle, trailer, tow, boat, etc., and tow-ball, including initially upon attaching a tow load and after adding any additional load(s), (iii) Purchaser’s failure to properly secure loads to avoid shifting of weight, or (iv) Purchaser’s failure to comply with traffic regulations or drive safely by a reasonable standard.  The occurrence of any of the failures or events listed in this Section 8 shall void this Warranty.
+        \n\n9.   The Manufacturer does not warrant that the Weigh Safe True Tow Weight Distribution Hitch will prevent, or be free from damage, upon the occurrence of any traffic accident or other incident arising from an act of God.
+        \n\n10. THIS WARRANTY DOES NOT COVER SCRATCHING OR SCUFFING OF THE WEIGH SAFE TRUE TOW WEIGHT DISTRIBUTION HITCH THAT MAY RESULT FROM NORMAL USAGE.  THIS WARRANTY ALSO DOES NOT COVER RUSTING PARTS, CRACKS THAT DO NOT AFFECT THE FUNCTIONALITY OF THE PRODUCT, OR OTHER DAMAGE CAUSED BY WEATHER OR CLIMATE CONDITIONS OR EXPOSURE TO CORROSIVES SUCH AS SALTS, PESTICIDES, ETC.
+        \n\n11.  This Warranty gives the Purchaser specific legal rights, and such Purchaser may also have other rights which vary from state to state.
+        \n\n12. THIS WARRANTY IS GIVEN EXPRESSLY IN LIEU OF ALL OTHER EXPRESS WARRANTIES. THIS WARRANTY IS THE SOLE WARRANTY AND THE MANUFACTURER DISCLAIMS ALL OTHER ORAL OR WRITTEN REPRESENTATIONS FROM ANY SOURCE CONCERNING THE WEIGH SAFE TRUE TOW WEIGHT DISTRIBUTION HITCH.  ANY IMPLIED WARRANTY ARISING OUT OF THE SALE OF THE WEIGH SAFE TRUE TOW WEIGHT DISTRIBUTION HITCH, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, IS LIMITED IN DURATION TO THE DURATION OF THIS WARRANTY.
+        \n\n13.  Some states do not allow limitations on how long an implied warranty lasts, so the above limitation may not apply to certain Purchasers.
+        \n\n14. THE REMEDY OF REPAIR OR REPLACEMENT STATED ABOVE SHALL BE THE PURCHASER’S EXCLUSIVE REMEDY.  THE MANUFACTURER DOES NOT ASSUME OR AUTHORIZE ANY PERSON OR REPRESENTATIVE TO ASSUME ON ITS BEHALF ANY OTHER LIABILITY IN CONNECTION WITH THE SALE OF A WEIGH SAFE TRUE TOW WEIGHT DISTRIBUTION HITCH.  THE MANUFACTURER SHALL NOT BE LIABLE FOR (A) ANY DAMAGES OR EXPENSES THAT MAY OCCUR, INCLUDING, BUT NOT LIMITED TO, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES, ARISING OUT OF OR IN CONNECTION WITH THE DELIVERY, INSTALLATION, USE, PERFORMANCE AND/OR REMOVAL OF THE WEIGH SAFE TRUE TOW WEIGHT DISTRIBUTION HITCH (INCLUDING, BUT NOT LIMITED TO, DAMAGE TO PROPERTY); (B) ANY OTHER CLAIM ARISING FROM NEGLIGENCE, STRICT LIABILITY, OR BREACH OF CONTRACT REGARDING THE WEIGH SAFE TRUE TOW WEIGHT DISTRIBUTION HITCH; OR (C) OTHER DAMAGES WITH RESPECT TO ANY ECONOMIC LOSS, LOSS OF PROPERTY, LOSS OF ENJOYMENT OF USE, COSTS OF INSTALLATION AND/OR REMOVAL, OR OTHER CONSEQUENTIAL DAMAGES FOR BREACH OF ANY EXPRESS OR IMPLIED WARRANTY COVERING THE WEIGH SAFE TRUE TOW WEIGHT DISTRIBUTION HITCH.
+        \n\n15.  Some states do not allow the exclusion or limitation of incidental or consequential damages, so the above limitation or exclusion may not apply to certain Purchasers.
+        \n\n16.  The Purchaser assumes all risk of injury resulting from the use of the Weigh Safe True Tow Weight Distribution Hitch.  All Weigh Safe True Tow Weight Distribution Hitches are sold subject to this condition, and no representative of the Manufacturer may waive or change this policy.
+
+    </string>
+    <string name="answer_1">Yes,you can. The purpose of the weight distribution hitch is to return any weight that is lost off the front axle of the tow vehicle when the trailer is attached. It is not meant to take away all the squat in the truck.
+    The tongue weight of the trailer still exist and is added to the back axle causing compression on the springs. If you would like to reduce that remaining squat in the back of your tow vehicle, feel free to use air bags or any other anti-squat system.
+    Just make sure you check that your DTW(distributed tongue weight) is correct for every tow with or without air bags.</string>
+    <string name="answer_2">If the lead screw is not turning, there are a few things you can check to solve the problem.
+    same. \n\n
+    • Make sure the lead screw is not bottomed out. The lower pivot system only has so much travel and will bottom out between the internal gauge shield and the top of the pivot system.
+    If this is the case, raise the height of your trailer bracket platforms and again, try to adjust the screw until you reach your DTW.\n\n
+    • Has your lead screw been serviced with grease lately? Make sure to use the grease ports and bi-annually (if not more frequently) pump in grease to keep the frictional surfaces lubricated.
+    Without lubrication, it can increase friction and ware, keeping the lead screw from turning.\n\n
+    • Large amounts of torque may be needed. With large trailers reaching the maximum ratings on the hitch, sometimes the loads will require large amounts of torque to adjust the lead screw, raise the tongue jack to lower the forces on the lead screw. Adjust the lead screw in or out, depending on what is needed, and put the tongue jack down periodically to check if you have reached the required DTW.
+    </string>
+    <string name="answer_3">The purpose of the weight distribution hitch is to return any weight that is lost off the front axle of the tow vehicle when the trailer is attached. It is not meant to take away all the squat in the truck. The tongue weight of the trailer still exist and is added to the back axle causing compression on the springs. If you would like to reduce that remaining squat in the back of your tow vehicle, feel free to use air bags or any other anti-squat system.
+    Just make sure you check that your DTW(distributed tongue weight) is correct for every tow with or without air bags.</string>
+    <string name="answer_4">If you feel that your truck is still squatting more than normal even after you have adjusted True Tow hitch to reach the DTW that you determined from the DTW tool, double check the following.
+    Check your tow vehicle ratings and make sure you are not towing over the weight capacity. Check that all measurements and the tongue weight without the spring arms attached were inputted correctly into the DTW tool to ensure you have the correct DTW.
+    The DTW should be about 2-3 times more than the original tongue weight of the trailer. If this si not so, something must be wrong. Please contact our Custormer Support team so we can look further into resolving this for you.</string>
+    <string name="answer_5">If you see any clear, odorless oil leaking from the hitch, please check all hydraulic plugs, gauges, and the piston under the tow ball to see if one of these areas are leaking. If so, please contact our Customer Support team to get your True Tow hitch repaired under warranty.
+    </string>
+    <string name="answer_6">If you notice your gauge is not measuring tongue weight, there could be a couple of causes for this. Please check the following prior to calling our Customer Support team.\n\n
+    • Tongue weight is less then 200 lbs. If your trailer tongue is less the 200 lbs, the gauge has a hard time reading this low of a tongue weight.\nPlease increase your tongue weight to be over 300 lbs to ensure your gauge is not working.\n\n
+    • Hydraulic oil leak. Without hydraulic fluid, the gauge will not read weight. If you see any clear, odorless oil leaking from the hitch, please check all hydraulic plugs, gauges, and the piston under the tow ball to see if one of these are leaking. If so, please contact our Customer Support team to get your True Tow hitch repaired under warranty.
+    </string>
+    <string name="answer_7">The True Tow Weight Distribution Hitch is painted with a high-strength powder coating for rust and corrosion resistance. Through normal ware, especially in high-friction points on the hitch, the paint could rub or chip off. If you are seeing this, you can use a flat black primer and paint to touch up these areas to reduce rust and corrosion, which will extend the life of your hitch.</string>
+
+    <string name="watch_video">Watch Video</string>
+
+    <string name="text_error_1">Please fill your field!</string>
+    <string name="text_error_2">Unsafe tongue weight!</string>
+    <string name="text_error_rear_range">Incorrect Rear Vehicle Axle Center-line to Tow Ball measurement. Should be between 0.0 and 70.0 inches</string>
+    <string name="text_error_spring_Range">Incorrect Tow Ball to Spring Bar Connection measurement. Should be between 24.0 and 32.0 inches</string>
+    <string name="text_unsafe_tow_title">Unsafe Tow Configuration</string>
+    <string name="text_unsafe_tow_configuration">Your tongue weight is outside of our recommended "Safe Tongue Weight Range." We recommend repositioning the cargo in the trailer or remove cargo.</string>
+
+    <string name="min_lbs">MIN</string>
+    <string name="max_lbs">MAX</string>
+    <string name="target_lbs">TARGET</string>
+    <string name="safe_zone">SAFEZONE</string>
+
+    <!-- version 2.0 strings -->
+    <string name="hitch_sample1">Bumper Pull</string>
+    <string name="hitch_sample2">Weigh Distribution</string>
+    <string name="hitch_menu">HELP/SETUP</string>
+
+    <string name="lb_gvwr">(lb) GVWR</string>
+    <string name="lb_gcwr">(lb) GCWR</string>
+    <string name="lb_gtwr">(lb) GTWR</string>
+    <string name="lb_vehicle">Vehicle</string>
+    <string name="lb_trailer">Trailer</string>
+    <string name="lb_cargo">CARGO (lb)</string>
+    <string name="lb_est_gvw">est. GVW (lb)</string>
+    <string name="lb_est_gcw">est. GCW (lb)</string>
+    <string name="lb_est_gtw">est. GTW (lb)</string>
+
+    <string name="no_gvwr">GVWR</string>
+    <string name="no_gcwr">GCWR</string>
+    <string name="no_mcc">MCC</string>
+
+    <string name="no_max_tongue_lbs">MAX TONGUE LBS</string>
+    <string name="no_ball">BALL</string>
+    <string name="no_shank">SHANK</string>
+    <string name="no_coupler">COUPLER</string>
+    <string name="no_lbs">LBS</string>
+    <string name="no_type">TYPE</string>
+
+    <string name="lb_estimated_tongue">ESTIMATED\nTONGUE WEIGHT (lb)</string>
+    <string name="lb_actual_tongue">ACTUAL\nTONGUE WEIGHT (lb)</string>
+    <string name="lb_distributed_tongue">DISTRIBUTED\nTONGUE WEIGHT (lb)</string>
+    <string name="lb_zone_equalized">(Be in this zone to be equalized)</string>
+    <string name="edit_measurements">Edit Measurements</string>
+    <string name="lb_safe_weight_range">SAFE TONGUE WEIGHT RANGE (lb)</string>
+
+    <string name="text_promo_1">Why be kinda safe when you can be Weigh Safe!</string>
+    <string name="text_promo_2">Take the guess work out of the equation, and get a hitch that measures tongue weight. Click to see how!</string>
+    <string name="lb_drawbar_position">DRAWBAR POSITION</string>
+    <string name="lb_holes_visible">HOLES VISIBLE</string>
+
+    <string name="lb_weigh_safe_hitch">I have a Weigh Safe Hitch</string>
+    <string name="lb_no_weigh_safe_hitch">No Weigh Safe hitch?</string>
+    <string name="link_how_to_weighsafe">See how Weigh Safe hitches make towing safer</string>
+    <string name="link_installation_guide">Installation Guide</string>
+
+    <string name="text_new_vehicle">New Vehicle</string>
+    <string name="text_new_trailer">New Trailer</string>
+    <string name="text_new_hitch">New Hitch</string>
+    <string name="text_new_cargo">New Cargo</string>
+    <string name="text_new_setup">New Setup</string>
+    <string name="text_setup_note">Start by Setting up your first tow configuration: Tow Configuration = Vehicle + Hitch + Trailer + Cargo"</string>
+    <string name="text_setup_note_b">After saving, setup vehicle, hitch, trailer, and optional cargo for the new configuration.</string>
+    <string name="place_holder_setup_a">Name this config...(i.e. Work, Camping Trip, Boating, etc..)</string>
+    <string name="place_holder_setup_b">Name this config...(i.e. Work, Camping Trip, Boating, etc..)</string>
+
+    <string name="text_change_setup">Change the name of the this configuration</string>
+    <string name="place_holder_Edit">Name of setup...</string>
+
+    <string name="text_edit_vehicles">Edit Vehicle</string>
+    <string name="text_edit_trailers">Edit Trailer</string>
+    <string name="text_edit_hitchs">Edit Hitch</string>
+    <string name="text_edit_cargos">Edit Cargo</string>
+
+    <string name="text_towing_measurements">Towing Measurements</string>
+
+    <string name="text_vin_lookup">VIN LOOKUP</string>
+    <string name="text_gvwr">Gross Vehicle Weight Rating (GVWR)</string>
+    <string name="text_gvwr_1">Gross Vehicle Weight Rating</string>
+    <string name="text_mcc">Max Cargo Capacitiy (Payload)</string>
+    <string name="text_gcwr">Gross Combined Weight Rating (GCWR)</string>
+    <string name="text_gcwr_1">Gross Combined Weight Rating</string>
+    <string name="text_mgtw">Max Gross Trailer Weight (weight carrying)</string>
+    <string name="text_mgtw_1">Max Gross Trailer Weight</string>
+    <string name="text_mtw">Max Tongue Weight (weight carrying)</string>
+    <string name="text_mtw_1">Max Tongue Weight</string>
+    <string name="text_does_weight_ratings">Does your receiver have distributed weight ratings?</string>
+    <string name="text_distributed_mgtw">Distributed Max Gross Trailer Weight (optional)</string>
+    <string name="text_distributed_mtw">Distributed Max Tongue Weight (optional)</string>
+    <string name="text_rear_bumper_tow">REAR BUMPER TOW POINT RATINGS</string>
+    <string name="text_coupler">Coupler</string>
+    <string name="text_delete_trailer">Delete Trailer</string>
+    <string name="text_delete_vehicle">Delete Vehicle</string>
+    <string name="text_Delete_hitch">Delete Hitch</string>
+    <string name="text_max_gtwr">Max Gross Trailer Weight Rating</string>
+    <string name="text_gtwr">Gross Trailer Weight Rating</string>
+    <string name="text_max_tongue_weight">Max Tongue Weight</string>
+    <string name="text_ball_size">Ball Size</string>
+    <string name="text_shank_size">Shank Size</string>
+    <string name="text_estimated_weight_cargo">Estimated Weight of Cargo</string>
+    <string name="text_cargo_location">Cargo Location</string>
+    <string name="text_delete_cargo">Delete Cargo</string>
+
+    <string name="btn_no">No</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_coupler_val_1">1 7/8\"</string>
+    <string name="btn_coupler_val_2">2\" </string>
+    <string name="btn_coupler_val_3">2 5/16\" </string>
+
+    <string name="btn_ball_val_1">1 7/8\"</string>
+    <string name="btn_ball_val_2">2\" </string>
+    <string name="btn_ball_val_3">2 5/16\" </string>
+
+    <string name="btn_shank_val_1">2\"</string>
+    <string name="btn_shank_val_2">2 1/2\" </string>
+    <string name="btn_shank_val_3">3\" </string>
+
+    <string name="vehicle_name_label">Name of Vehicle</string>
+    <string name="trailer_name_label_1">Type of Trailer</string>
+    <string name="trailer_name_label_2">Name of Trailer</string>
+    <string name="hitch_name_label">Name of Hitch</string>
+    <string name="cargo_name_label">Name of Cargo</string>
+
+    <string name="lb_hitch_model">Hitch Model</string>
+    <string name="lb_hitch_type">Hitch Type</string>
+
+    <string-array name="hitch_model_list">
+        <item>Weigh Safe Drop Hitch</item>
+        <item>Steel Weigh Safe Drop Hitch</item>
+        <item>Weigh Safe 180 Hitch</item>
+        <item>Universal Tow Ball</item>
+        <item>Fixed Height Ball Mount</item>
+        <item>True Tow Weight Distribution Hitch</item>
+        <item>Safe Load OEM Gooseneck Ball</item>
+        <item>Safe Load ISR Gooseneck</item>
+        <item>Safe Load BW Insert Gooseneck</item>
+    </string-array>
+
+    <string-array name="trailer_type_list">
+        <item>Boat Trailer</item>
+        <item>Enclosed Trailer</item>
+        <item>Open Bed Trailer</item>
+        <item>Horse Trailer</item>
+        <item>RV Trailer</item>
+    </string-array>
+
+    <string-array name="hitch_type_list">
+        <item>Bumper Pull</item>
+        <item>Weight Distribution</item>
+        <item>Gooseneck</item>
+        <item>Fifth Wheel</item>
+    </string-array>
+
+    <string name="text_vehicle_setup">Select a sample vehicle or manually add your own vehicle with the PLUS button.</string>
+    <string name="text_hitch_setup">Select a hitch or manually add your own hitch with the PLUS button.</string>
+    <string name="text_trailer_setup">Select a sample trailer or manually add your own trailer with the PLUS button.</string>
+    <string name="text_cargo_setup">Cargo is common items that you load on your vehicle or trailer. The &quot;Home&quot; screen allows you to adjust cargo weight manually for the vehicle and/or trailer at any time.</string>
+    <string name="text_sample_vehicle_saved">Sample Vehicle Saved</string>
+    <string name="text_sample_hitch_saved">Sample Hitch Saved</string>
+    <string name="text_sample_trailer_saved">Sample Trailer Saved</string>
+    <string name="text_sample_cargo_saved">Cargo Presets Saved</string>
+    <string name="text_note_saved">Note saved</string>
+
+    <string name="text_type_of_towing_receivers">Type of Towing Receivers</string>
+    <string name="text_required_field">Required Field</string>
+    <string name="text_warning">Warning</string>
+    <string name="text_confimration">Are you sure?</string>
+    <string name="text_enter_name">Enter Name</string>
+    <string name="text_enter_cargo_value">Input number of Cargo</string>
+    <string name="text_delete_not_vehicle">A minimum of one vehicle is required.</string>
+    <string name="text_delete_not_hitch">A minimum of one hitch is required.</string>
+    <string name="text_delete_not_trailer">A minimum of one Trailer is required.</string>
+    <string name="text_delete_not_cargo">A minimum of one Cargo is required.</string>
+
+    <string name="guide_weigh_safe_drop_hitch">https://www.weigh-safe.com/wp-content/uploads/2018/05/Weigh-Safe-Instruction-Sheet-2018.pdf</string>
+    <string name="guide_weigh_safe_180_hitch">https://www.weigh-safe.com/wp-content/uploads/2018/05/180-Hitch-Instruction-2018.pdf</string>
+    <string name="guide_universal_tow_ball">https://www.weigh-safe.com/product/universal-tow-ball/</string>
+    <string name="guide_fixed_height_ball_mount">https://www.weigh-safe.com/product/fixed-height-ball-mount/</string>
+    <string name="guide_true_tow_weight_hitch">https://www.weigh-safe.com/wp-content/uploads/2020/02/weigh-safe-safe-tow-manual-facing-pages-updated-2-13.pdf</string>
+    <string name="guide_safe_load_oem_gooseneck">https://www.weigh-safe.com/wp-content/uploads/2020/09/OEM-Instruction-Manual-1.pdf</string>
+    <string name="guide_safe_load_isr_gooseneck">https://www.weigh-safe.com/wp-content/uploads/2020/07/ISR-GOOSENECK-MANUAL.pdf</string>
+
+    <string name="vin_text_comment">Enter Vehicle VIN number and select\n your vehicle</string>
+    <string name="vin_scan_camera">Scan with Camera</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="some_error">Some Error Occurred</string>
+
+    <string name="text_disclaimer_warning">Do not Exceed the Vehicle, Trailer and Hitch Manufacturer&quot;s recommended towing capacities.</string>
+    <string name="text_disclaimer_view_terms">View Terms &amp; Conditions</string>
+    <string name="text_accept_terms">I ACCEPT TERMS &amp; CONDITIONS</string>
+
+    <string name="text_welcome_safe_title">Welcome to the Weigh Safe Family!</string>
+    <string name="text_welcome_body">This Towing Guide &amp; Calculating Tool will help you achieve an optimal towing configuration for your entire towing system:</string>
+    <string name="text_welcome_body2">VEHICLES\nTRAILERS\nBALL MOUNTS\nWEIGHT DISTRIBUTIONS\nGOOSENECKS\n5TH WHEEL HITCHES\n\n\nWith your help, you can achieve Towing Peace of Mind.</string>
+    <string name="text_next">NEXT</string>
+
+    <string name="text_terms_conditions">Terms &amp; Conditions</string>
+    <string name="temrs_conditions_url">https://www.weigh-safe.com/mobile-app-terms-conditions</string>
+
+    <string name="trailer_type">Type</string>
+    <string name="trailer_dry_boat">Dry Boat Weight</string>
+
+    <string name="text_no_vehicle_setup">No vehicles have been setup. Manually add vehicles with the PLUS button.</string>
+    <string name="text_no_hitch_setup">No hitches have been setup. A minimum of one hitch is required. Manually add hitches with the PLUS button.</string>
+    <string name="text_no_trailer_setup">No trailers have been setup. A minimum of one trailer is required. Manually add trailers with the PLUS button.</string>
+    <string name="text_no_cargo_setup">No cargo has been setup. Cargo is additional items of vehicles that count toward load capacity.</string>
+
+    <string name="text_towing_vehicles">Towing Vehicles</string>
+    <string name="text_hitches">Hitches</string>
+    <string name="text_trailers">Trailers</string>
+    <string name="text_cargo">Cargo</string>
+    <string name="text_start">Start</string>
+    <string name="text_back">Back</string>
+    <string name="text_close">Close</string>
+
+    <string name="warning_gvwr_less">Warning: GVWR can&quot;t be less than Max Cargo Capacity</string>
+    <string name="warning_mcc_greater">Warning: Max Cargo Capacity can&quot;t be greater than GVWR</string>
+    <string name="warning_gcwr_less">Warning: GCWR can&quot;t be less than GVWR</string>
+
+    <string name="text_invalid_userinput">Invalid User Input</string>
+    <string name="text_empty_weight">Empty Weight</string>
+    <string name="text_load_capacity">Load Capacity</string>
+
+    <string name="text_wizard_vehicle_title">Would you like to add a new vehicle?</string>
+    <string name="text_wizard_vehicle_message">Keeping the vehicle will jump to Hitches.</string>
+
+    <string name="text_wizard_hitch_title">Would you like to add a new hitch?</string>
+    <string name="text_wizard_hitch_message">Keeping the hitch will jump to Trailers.</string>
+
+    <string name="text_wizard_trailer_title">Would you like to add a new trailer?</string>
+    <string name="text_wizard_trailer_message">Keeping the trailer will jump to Cargo.</string>
+
+    <string name="text_hitch_configuration">Hitch Configuration</string>
+    <string name="text_hitch_config_subtitle">The trailer coupler is not large enough to fit the active hitch</string>
+
+    <string name="tow_congrats">Congratulations</string>
+    <string name="tow_congrats_subtitle">You completed the pre-tow safety checklist for a safer towing experience. Enjoy your ride and stay safe!</string>
+    <string name="tow_congrats_subtitle2">If you would like to add cargo tap &quot;Close&quot;, otherwise tap &quot;Go to Home&quot; to complete your tow configuration.</string>"
+
+    <string name="title_hitch_notice">Important Hitch Notice</string>
+    <string name="title_hitch_notice_subtitle">We recommend you view our installation guide and/or video prior to completing your True Tow Weight Distribution Hitch setup. The installation guide will walk you through the remaining setup items to complete.</string>
+
+    <string name="pop_text_enter_tw_1">Please enter your tongue weight</string>
+    <string name="pop_text_enter_tw_2">Please enter your tongue weight. After that, press the &quot;Calculate&quot; button to get your required adjusted tongue weight.</string>
+    <string name="pop_text_checklist">For your safety, complete the tow checklist</string>
+</resources>

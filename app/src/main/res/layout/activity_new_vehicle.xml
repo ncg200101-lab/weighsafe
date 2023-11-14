@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.NewVehicleActivity"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingHorizontal="@dimen/main_dimen_40"
+        android:background="@color/colorPrimaryDark">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/setup_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_new_vehicle"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/edit_btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_btn_save"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scrollbar_edit"
+        android:layout_below="@id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/edit_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/main_dimen_40">
+                <LinearLayout
+                    android:id="@+id/vehicle_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="@dimen/main_dimen_40">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/vehicle_name_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/vehicle_name_label"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/btn_vin_lookup"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/text_vin_lookup"
+                            android:textColor="@color/colorBlack"
+                            android:background="@drawable/round_set_default"
+                            android:textSize="12sp"/>
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/vehicle_name_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:singleLine="true"
+                        android:textSize="18sp"
+                        android:hint="i.e.2020 Ford F-150, Or My Chevy Truck..." />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_gvwr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vehicle_name"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/rl_img_1"
+                            android:text="@string/text_gvwr"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_img_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:id="@+id/img_sub_1"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="10dp"
+                                android:clickable="true"
+                                android:src="@drawable/info" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/edit_gvwr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:hint="lbs"
+                        android:textColorHint="@color/grey60"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_mcc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_gvwr"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/rl_img_2"
+                            android:text="@string/text_mcc"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_img_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:id="@+id/img_sub_2"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="10dp"
+                                android:clickable="true"
+                                android:src="@drawable/info" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/edit_mcc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:hint="lbs"
+                        android:textColorHint="@color/grey60"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_gcwr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_mcc"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/rl_img_3"
+                            android:text="@string/text_gcwr"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_img_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:id="@+id/img_sub_3"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="10dp"
+                                android:clickable="true"
+                                android:src="@drawable/info" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/edit_gcwr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:hint="lbs"
+                        android:textColorHint="@color/grey60"/>
+                </LinearLayout>
+
+                <!--
+                <LinearLayout
+                    android:layout_marginTop="@dimen/main_dimen_40"
+                    android:id="@+id/drawbar_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_gcwr"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="10dp"
+                        android:text="@string/draw_text"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+                    <info.hoang8f.android.segmented.SegmentedGroup xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/segmented1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:id="@+id/btn_rise"
+                            style="@style/RadioButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/btn_raise" />
+
+                        <RadioButton
+                            android:id="@+id/btn_drop"
+                            style="@style/RadioButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/btn_drop" />
+                    </info.hoang8f.android.segmented.SegmentedGroup>
+
+                </LinearLayout>
+                -->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_rear_bumper"
+                android:layout_marginTop="@dimen/main_dimen_40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_panel"
+                android:background="@color/colorPrimaryDark">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/rl_img_rear"
+                    android:text="@string/text_rear_bumper_tow"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_img_rear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/img_sub_rear"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        android:src="@drawable/info" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/edit_panel_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/main_dimen_40">
+
+                <LinearLayout
+                    android:id="@+id/ll_mgtw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/text_mgtw"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edit_mgtw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:hint="lbs"
+                        android:textColorHint="@color/grey60"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_mtw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_mgtw"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/text_mtw"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edit_mtw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:hint="lbs"
+                        android:textColorHint="@color/grey60"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_distributed_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_mtw"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/text_does_weight_ratings"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+                        android:id="@+id/btn_group_yes_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:elevation="3dp"
+                        android:background="@android:color/darker_gray"
+                        app:divider="@color/grey60"
+                        app:dividerPadding="5dp"
+                        app:dividerWidth="2dp"
+                        app:draggable="true"
+                        app:position="0"
+                        app:radius="5dp"
+                        app:ripple="true"
+                        app:rippleColor="@color/grey60"
+                        app:selectedButtonRadius="5dp"
+                        app:selectedBackground="@android:color/white">
+
+                        <com.addisonelliott.segmentedbutton.SegmentedButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            app:selectedTextColor="@color/colorPrimary"
+                            app:text="@string/btn_no"
+                            app:textColor="@android:color/black"
+                            app:textSize="16sp"/>
+
+                        <com.addisonelliott.segmentedbutton.SegmentedButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            app:selectedTextColor="@color/colorPrimary"
+                            app:text="@string/btn_yes"
+                            app:textColor="@android:color/black"
+                            app:textSize="16sp"/>
+
+                    </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_distributed_mgtw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_distributed_weight"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/text_distributed_mgtw"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edit_distributed_mgtw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:hint="lbs"
+                        android:textColorHint="@color/grey60"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_distributed_mtw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_distributed_mgtw"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/text_distributed_mtw"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edit_distributed_mtw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:hint="lbs"
+                        android:textColorHint="@color/grey60"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_delete_vehicle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="end"
+                    android:layout_below="@+id/ll_distributed_mtw"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_trash_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/text_delete_vehicle"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

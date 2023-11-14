@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment2_setup2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".fragments2.Setup2Fragment">
+
+    <RelativeLayout
+        android:id="@+id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+        <include
+            android:id="@+id/setup_header"
+            layout="@layout/setup_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_bar"
+        app:tabBackground="@color/colorPrimaryDark"
+        app:tabTextColor="@color/colorAccent"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabIndicatorColor="@android:color/white"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabLayout"
+        android:id="@+id/setup_viewPager"/>
+
+    <RelativeLayout
+        android:id="@+id/vehicleListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_below="@+id/header_bar"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="@dimen/main_padding_horizontal"
+        android:paddingRight="@dimen/main_padding_horizontal"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/addVehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_border"
+            android:onClick="onClickAddVehicle"
+            android:clickable="true"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_add" />
+
+            <TextView
+                android:id="@+id/addText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imageView"
+                android:text="@string/text_dummy_vehicle_title"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/vehicleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addVehicle"
+            android:orientation="vertical"
+            android:paddingBottom="15dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/vehiclesList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                tools:listitem="@layout/row_vehicles" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

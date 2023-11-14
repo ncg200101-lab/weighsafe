@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments2.VehicleSetupFragment"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/rl_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey60">
+        <TextView
+            android:id="@+id/setup_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_vehicle_setup"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"/>
+    </RelativeLayout>
+    -->
+    <LinearLayout
+        android:id="@+id/ll_towing_vehicles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:weightSum="1">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"/>
+        <ImageView
+            android:id="@+id/img_towing_vehicles"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/vehicle_setup" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:singleLine="false"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:text="@string/text_towing_vehicles"
+            android:textColor="@color/colorBlack"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeMaxTextSize="20sp"
+            app:autoSizeStepGranularity="2sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.35"
+            android:gravity="center_horizontal"
+            android:singleLine="false"
+            android:textAllCaps="false"
+            android:text="@string/text_no_vehicle_setup"
+            android:textColor="@color/colorGrey"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeMaxTextSize="19sp"
+            app:autoSizeStepGranularity="2sp"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"/>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/root_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler_vehicle"
+                android:scrollbars="none" />
+            <!--tools:listitem="@layout/layout_item_vehicle"-->
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="70dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ImageButton
+        android:id="@+id/fab_new"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_add_circle"/>
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_vehicle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_vehicle_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_vehicle_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TruckBus"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"/>
+
+        <Button
+            android:id="@+id/btn_activate"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:text="SET"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/round_set_default" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_vin_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIN: ---"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"/>
+
+    <LinearLayout
+        android:id="@+id/ll_weight_vr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.125"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_gvwr"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorGrey" />
+
+            <TextView
+                android:id="@+id/val_gvwr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22,000"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.125"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_gcwr"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorGrey" />
+
+            <TextView
+                android:id="@+id/val_gcwr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23,000"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_mcc"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorGrey" />
+
+            <TextView
+                android:id="@+id/val_mcc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13,570"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

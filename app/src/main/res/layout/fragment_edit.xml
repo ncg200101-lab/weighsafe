@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.EditFragment"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingHorizontal="@dimen/main_dimen_40"
+        android:background="@color/colorPrimaryDark">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/edit_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_title"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/edit_btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_btn_save"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scrollbar_edit"
+        android:layout_below="@id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/main_dimen_40">
+
+        <RelativeLayout
+            android:id="@+id/edit_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/vehicle_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingVertical="@dimen/main_dimen_40">
+
+                <TextView
+                    android:id="@+id/vehicle_name_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/vehicle_name_label"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/vehicleError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    app:hintEnabled="false">
+                    <EditText
+                        android:id="@+id/vehicle_name_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:singleLine="true"
+                        android:textSize="18sp"
+                        android:hint="(i.e.2018 Ford F-150)" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/trailer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vehicle_name"
+                android:orientation="vertical"
+                android:paddingVertical="@dimen/main_dimen_40">
+
+                <TextView
+                    android:id="@+id/trailer_name_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/trailer_name_label_1"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/trailerError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    app:hintEnabled="false">
+                    <EditText
+                        android:id="@+id/trailer_name_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:singleLine="true"
+                        android:textSize="18sp"
+                        android:hint="(i.e.Boat trailer)" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/axle_inch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trailer_name"
+                android:orientation="vertical"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/rl_img_1"
+                        android:text="@string/axle_inch_label"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_img_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true">
+
+                        <ImageView
+                            android:id="@+id/img_sub_1"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dp"
+                            android:clickable="true"
+                            android:onClick="OnClickImage"
+                            android:src="@drawable/info" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/axleError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    app:hintEnabled="false">
+                    <EditText
+                        android:id="@+id/axle_inch_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:hint="Input between 0 and 70" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/spring_inch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/axle_inch"
+                android:orientation="vertical"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/rl_img_2"
+                        android:text="@string/spring_inch_label"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_img_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true">
+
+                        <ImageView
+                            android:id="@+id/img_sub_2"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dp"
+                            android:clickable="true"
+                            android:onClick="OnClickImage"
+                            android:src="@drawable/info" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/springError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true">
+                    <EditText
+                        android:id="@+id/spring_inch_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:hint="Input between 24 and 32"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/trailer_inch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spring_inch"
+                android:orientation="vertical"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/rl_img_3"
+                        android:text="@string/trailer_inch_label"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_img_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true">
+
+                        <ImageView
+                            android:id="@+id/img_sub_3"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dp"
+                            android:clickable="true"
+                            android:onClick="OnClickImage"
+                            android:src="@drawable/info" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/trailerinchError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true">
+                    <EditText
+                        android:id="@+id/trailer_inch_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:hint="inches"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/main_dimen_40"
+                android:id="@+id/drawbar_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trailer_inch"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:text="@string/draw_text"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <info.hoang8f.android.segmented.SegmentedGroup xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/segmented1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/btn_rise"
+                        style="@style/RadioButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/btn_raise" />
+
+                    <RadioButton
+                        android:id="@+id/btn_drop"
+                        style="@style/RadioButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/btn_drop" />
+                </info.hoang8f.android.segmented.SegmentedGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/main_dimen_40"
+                android:layout_marginBottom="@dimen/main_dimen_40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/drawbar_position"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/holes_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:text="@string/holes_text"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/holes_content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/holes_content_text"
+                        />
+                    <TextView
+                        android:layout_toRightOf="@id/holes_content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/holes_content_unit"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorBlack"/>
+
+                    <info.hoang8f.android.segmented.SegmentedGroup xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/segmented2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/btn_minus"
+                            style="@style/RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/btn_minus" />
+
+                        <RadioButton
+                            android:id="@+id/btn_plus"
+                            style="@style/RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/btn_plus" />
+                    </info.hoang8f.android.segmented.SegmentedGroup>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

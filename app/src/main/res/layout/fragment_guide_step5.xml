@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.otaliastudios.zoom.ZoomLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    tools:context=".fragments.GuideStep5Fragment"
+    android:paddingTop="@dimen/main_dimen_40"
+    android:paddingLeft="@dimen/main_dimen_40"
+    android:paddingRight="@dimen/main_dimen_40"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:transformation="none"
+    app:transformationGravity="auto"
+    app:alignment="top"
+    app:overScrollHorizontal="false"
+    app:overScrollVertical="false"
+    app:overPinchable="false"
+    app:horizontalPanEnabled="true"
+    app:verticalPanEnabled="true"
+    app:zoomEnabled="true"
+    app:scrollEnabled="true"
+    app:oneFingerScrollEnabled="true"
+    app:twoFingersScrollEnabled="true"
+    app:minZoom="1"
+    app:minZoomType="zoom"
+    app:maxZoom="5"
+    app:maxZoomType="zoom"
+    app:animationDuration="280"
+    app:hasClickableChildren="true">
+
+    <!--<com.weigh.safe.helpers.ZoomableRelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <LinearLayout
+            android:id="@+id/step_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/spring_arm"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/main_dimen_40"
+                android:text="@string/spring_warning"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/main_dimen_40"
+                android:text="@string/spring_notice"
+                android:textStyle="italic"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/main_dimen_40"
+                android:text="@string/spring_text_1"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:layout_marginTop="@dimen/main_dimen_40"
+                android:adjustViewBounds="true"
+                android:src="@drawable/step5a" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="@dimen/main_dimen_40"
+                android:src="@drawable/step5b" />
+
+            <TextView
+                android:id="@+id/close_guide"
+                android:visibility="gone"
+                android:layout_margin="@dimen/main_dimen_40"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/close_guide"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_dimen_40">
+                <ImageView
+                    android:id="@+id/img_back_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_arrow_back_24"/>
+
+                <TextView
+                    android:id="@+id/go_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_back_page"
+                    android:layout_marginLeft="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="16dp"
+                    android:text="@string/text_back" />
+
+                <TextView
+                    android:id="@+id/go_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/img_next_page"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/radio_button_selected_color"
+                    android:textSize="16dp"
+                    android:text="@string/text_next" />
+                <ImageView
+                    android:id="@+id/img_next_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_arrow_start_24"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    <!--</com.weigh.safe.helpers.ZoomableRelativeLayout>-->
+
+</com.otaliastudios.zoom.ZoomLayout>

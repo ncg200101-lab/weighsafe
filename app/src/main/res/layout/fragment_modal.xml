@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_white_box"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/text_setup"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:text="@string/text_setup_note"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/input_setup_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:inputType="text"
+        android:hint="@string/place_holder_setup_b"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorGrey"
+        android:textSize="15sp"
+        android:background="@drawable/round_red_box"/>
+
+    <LinearLayout
+        android:id="@+id/ll_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/input_setup_name"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.45"
+            android:text="@string/btn_save"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:background="@drawable/round_primary_box"/>
+        <Space
+            android:id="@+id/space_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.45"
+            android:text="@string/btn_cancel"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:background="@drawable/round_gray_box"/>
+    </LinearLayout>
+
+</RelativeLayout>

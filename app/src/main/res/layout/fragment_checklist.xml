@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite">
+    <RelativeLayout
+        android:id="@+id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <include
+            android:id="@+id/checklist_header"
+            layout="@layout/checklist_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview_checklist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_bar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/main_padding_horizontal"
+            android:paddingRight="@dimen/main_padding_horizontal"
+            android:paddingTop="5dp">
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/rl_section_1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/bottom_grey_border"-->
+                <!--android:paddingBottom="11dp"-->
+                <!--android:paddingTop="11dp">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/rl_hand_weight"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_toLeftOf="@+id/rl_image_check_1">-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/rl_subsection_1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/text_sub_1"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:text="@string/text_hand_crank_weight"-->
+                            <!--android:textColor="@color/colorBlack"-->
+                            <!--android:textSize="15sp" />-->
+
+                        <!--<RelativeLayout-->
+                            <!--android:id="@+id/rl_img_6"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:layout_marginLeft="10dp"-->
+                            <!--android:layout_toRightOf="@+id/text_sub_1">-->
+
+                            <!--<ImageView-->
+                                <!--android:id="@+id/img_sub_1"-->
+                                <!--android:layout_width="13dp"-->
+                                <!--android:layout_height="13dp"-->
+                                <!--android:layout_centerVertical="true"-->
+                                <!--android:layout_margin="10dp"-->
+                                <!--android:clickable="true"-->
+                                <!--android:onClick="onClickInfo"-->
+                                <!--app:srcCompat="@drawable/info" />-->
+                        <!--</RelativeLayout>-->
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/rl_sub_val_1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@+id/rl_subsection_1">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/text_hand_crank_weight"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:text="@string/text_lbs_lg"-->
+                            <!--android:textColor="@color/colorPrimaryDark"-->
+                            <!--android:textSize="16sp" />-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/text_required_to"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="10dp"-->
+                            <!--android:layout_toRightOf="@+id/text_hand_crank_weight"-->
+                            <!--android:text="@string/text_required_to_equalize_the_trailer"-->
+                            <!--android:textColor="@color/colorGrey"-->
+                            <!--android:textSize="13sp" />-->
+                    <!--</RelativeLayout>-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/rl_image_check_1"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginLeft="7dp"-->
+                    <!--android:clickable="true"-->
+                    <!--android:onClick="onClickCheck"-->
+                    <!--android:paddingBottom="7dp"-->
+                    <!--android:paddingLeft="7dp"-->
+                    <!--android:paddingTop="7dp">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/img_check_hand"-->
+                        <!--android:layout_width="30dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--app:srcCompat="@drawable/unselected" />-->
+                <!--</RelativeLayout>-->
+            <!--</RelativeLayout>-->
+
+            <RelativeLayout
+                android:id="@+id/rl_section_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_section_1"
+                android:background="@drawable/bottom_grey_border"
+                android:paddingBottom="11dp"
+                android:paddingTop="11dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_subsection_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/rl_image_check_2">
+
+                    <TextView
+                        android:id="@+id/text_sub_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_trailer_connection"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/text_verify_vehicle_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_sub_2"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/text_verify_vehicle_1"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/text_verify_vehicle_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_verify_vehicle_1"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/text_verify_vehicle_2"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/text_verify_vehicle_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_verify_vehicle_2"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/text_verify_vehicle_3"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/text_verify_vehicle_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_verify_vehicle_3"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/text_verify_vehicle_4"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_image_check_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:clickable="true"
+                    android:onClick="onClickCheck"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="7dp">
+
+                    <ImageView
+                        android:id="@+id/img_check_trailer_connection"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/unselected" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_section_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_section_2"
+                android:background="@drawable/bottom_grey_border"
+                android:paddingBottom="11dp"
+                android:paddingTop="11dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_subsection_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/rl_image_check_3">
+
+                    <TextView
+                        android:id="@+id/text_sub_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_load"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/text_verify_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_sub_3"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/text_verify_weight"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/text_verify_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_verify_weight"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/text_verify_distance"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/text_verify_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_verify_distance"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/text_verify_all"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_image_check_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:clickable="true"
+                    android:onClick="onClickCheck"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="7dp">
+
+                    <ImageView
+                        android:id="@+id/img_check_load"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/unselected" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_section_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_section_3"
+                android:background="@drawable/bottom_grey_border"
+                android:paddingBottom="11dp"
+                android:paddingTop="11dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_subsection_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/rl_image_check_4">
+
+                    <TextView
+                        android:id="@+id/text_sub_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_tires"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/text_verify_tires"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_sub_4"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/text_verify_tires"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_image_check_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:clickable="true"
+                    android:onClick="onClickCheck"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="7dp">
+
+                    <ImageView
+                        android:id="@+id/img_check_tires"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/unselected" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_section_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_section_4"
+                android:background="@drawable/bottom_grey_border"
+                android:paddingBottom="11dp"
+                android:paddingTop="11dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_subsection_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/rl_image_check_5">
+
+                    <TextView
+                        android:id="@+id/text_sub_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_lights"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/text_lights"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_sub_5"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/text_trailer"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_image_check_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:clickable="true"
+                    android:onClick="onClickCheck"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="7dp">
+
+                    <ImageView
+                        android:id="@+id/img_check_lights"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/unselected" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_section_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_section_5"
+                android:background="@drawable/bottom_grey_border"
+                android:paddingBottom="11dp"
+                android:paddingTop="11dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_subsection_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/rl_image_check_6">
+
+                    <TextView
+                        android:id="@+id/text_sub_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_trailer_brake"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/text_trailer_if_brake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_sub_6"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/text_trailer_if_brake"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_image_check_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:clickable="true"
+                    android:onClick="onClickCheck"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="7dp">
+
+                    <ImageView
+                        android:id="@+id/img_check_trailer_brakes"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/unselected" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_section_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_section_6"
+                android:background="@drawable/bottom_grey_border"
+                android:paddingBottom="11dp"
+                android:paddingTop="11dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_subsection_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/rl_image_check_7">
+
+                    <TextView
+                        android:id="@+id/text_sub_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_mirrors"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/text_verify_side_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_sub_7"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/text_verify_side_view"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_image_check_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:clickable="true"
+                    android:onClick="onClickCheck"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="7dp">
+
+                    <ImageView
+                        android:id="@+id/img_check_mirrors"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/unselected" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
